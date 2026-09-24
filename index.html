@@ -160,6 +160,28 @@
   .foot{margin-top:64px;padding-top:26px;border-top:1px solid #24443A;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:12.5px;color:#6E9683;letter-spacing:.06em}
   .foot .u{font-family:var(--latin)}
 
+
+  /* sub-lists */
+  .subsec{font-family:var(--serif);font-weight:700;font-size:19px;margin:64px 0 6px;display:flex;align-items:baseline;gap:12px}
+  .subsec small{font-family:"Noto Sans TC",sans-serif;font-weight:400;font-size:13px;color:var(--faint);letter-spacing:.04em}
+  .clist2{list-style:none;margin:0;padding:0}
+  .clist2 li{display:grid;grid-template-columns:92px 1fr;gap:24px;padding:18px 0;border-top:1px solid var(--line2)}
+  .clist2 li:last-child{border-bottom:1px solid var(--line2)}
+  .clist2 .y{font-family:var(--latin);font-size:17px;color:var(--green);line-height:1.5}
+  .clist2 .ti{font-size:15.5px;font-weight:500;line-height:1.7;color:var(--ink)}
+  .clist2 .me{font-size:13.5px;color:var(--muted);line-height:1.8;margin-top:4px}
+  .clist2 .me em{font-style:italic}
+  .tagp{display:inline-block;font-size:11.5px;letter-spacing:.08em;color:var(--green);border:1px solid var(--pill-bd);border-radius:999px;padding:1px 9px;margin-left:8px;vertical-align:2px;font-weight:400}
+  /* awards */
+  .awards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .award{padding:30px 28px 32px;background:#fff;border:1px solid var(--line2);border-top:3px solid var(--mint);border-radius:4px 4px 22px 4px}
+  .award .yr{font-family:var(--latin);font-size:15px;color:var(--faint);letter-spacing:.12em;margin-bottom:14px}
+  .award .rank{font-family:var(--serif);font-weight:900;font-size:24px;color:var(--deep);margin-bottom:12px}
+  .award h3{font-family:var(--serif);font-weight:700;font-size:16.5px;line-height:1.65;margin:0 0 12px}
+  .award p{font-size:13.5px;line-height:1.85;color:var(--text2);margin:0}
+  @media (max-width:960px){.awards{grid-template-columns:1fr}}
+  @media (max-width:720px){.clist2 li{grid-template-columns:1fr;gap:4px}.subsec{flex-direction:column;gap:2px}}
+
   /* responsive */
   @media (max-width:960px){
     .links{display:none}
@@ -202,6 +224,7 @@
       <a href="#education">學經歷</a>
       <a href="#service">職務與服務</a>
       <a href="#works">學術著作</a>
+      <a href="#awards">獲獎紀錄</a>
       <a href="#contact">聯絡</a>
     </div>
   </div>
@@ -368,7 +391,7 @@
 
 <section id="works" class="wrap sec">
   <div class="head"><span class="no">05</span><h2>學術著作</h2><span class="ln"></span></div>
-  <div class="subhead">SCIE 期刊論文選錄</div>
+  <div class="subhead">SCIE 期刊論文</div>
 
   <article class="feature">
     <div class="chips"><span class="chip-dark">代表著作</span><span class="chip-line">SCIE</span><span class="chip-txt">單一作者 · 第一兼通訊</span></div>
@@ -412,10 +435,62 @@
       </div>
     </div>
   </div>
+
+  <div class="subsec">其他英文期刊論文<small>Journal of the Chinese Society of Mechanical Engineers</small></div>
+  <ul class="clist2">
+      <li><div class="y">2027</div><div><div class="ti">Machine Learning-Assisted Multi-Objective Hydraulic Optimization of Bio-Inspired Leaf-Vein Flow Channels for Anion Exchange Membrane Water Electrolyzers<span class="tagp">已接受</span></div><div class="me"><em>Journal of the Chinese Society of Mechanical Engineers</em>　2026 年 9 月接受，預定刊於 Vol. 48, No. 5（2027 年 10 月）　·　Peng-Jen Chen（單一作者）</div></div></li>
+      <li><div class="y">2026</div><div><div class="ti">High-Speed Robotic Manipulator Vibration Control via B-Spline Trajectory Generation and L-BFGS-B Optimization</div><div class="me"><em>Journal of the Chinese Society of Mechanical Engineers</em>　Vol. 47, No. 1, pp. 129–138　·　Peng-Jen Chen（第一）、Ta-Jen Peng（通訊）、Ching-Li Liu、En-Cheng Liou</div></div></li>
+  </ul>
+
+  <div class="subsec">國內期刊與技術專文</div>
+  <ul class="clist2">
+      <li><div class="y">2026</div><div><div class="ti">氫能載體整合與儲能分析</div><div class="me">工業材料雜誌　第 474 期（2026 年 6 月）　·　王多美、周宜欣、陳鵬仁、顏溪成</div></div></li>
+      <li><div class="y">2025</div><div><div class="ti">前瞻核能應用材料之防腐技術分析</div><div class="me">工業材料雜誌　第 467 期，頁 135–142（2025 年 11 月）　·　周宜欣、陳鵬仁、顏溪成</div></div></li>
+      <li><div class="y">2024</div><div><div class="ti">基於蟻群演算法的鍛造離型劑自動化噴塗路徑優化研究</div><div class="me">智慧自動化產業期刊　第 51 期，頁 114–121（2024 年 12 月）　·　彭達仁、陳鵬仁、蘇挺綸、林忠潔</div></div></li>
+      <li><div class="y">2024</div><div><div class="ti">電解槽近膜流場特性數值模擬研究</div><div class="me">太陽能及新能源學刊　第 26 卷，頁 8–15（2024 年 6 月）　·　林志嘉、陳鵬仁、許豐家、黃靖穎</div></div></li>
+  </ul>
+
+  <div class="subsec">研討會論文</div>
+  <ul class="clist2">
+      <li><div class="y">2026</div><div><div class="ti">最佳樹狀生成流道系統設計之電解氫轉化效率預測系統<span class="tagp">領域最佳論文</span></div><div class="me">2026 綠色科技工程與應用研討會（GTEA）　·　陳鵬仁、李育安、黃閔澤、陳柏源</div></div></li>
+      <li><div class="y">2025</div><div><div class="ti">陰離子交換膜電解槽熱流場之模擬分析及最佳化設計</div><div class="me">中國機械工程學會第 42 屆全國學術研討會（CSME 2025）　·　陳鵬仁（單一作者）</div></div></li>
+      <li><div class="y">2025</div><div><div class="ti">龍門均溫設計分析研究</div><div class="me">中國機械工程學會第 42 屆全國學術研討會（CSME 2025）　·　陳鵬仁、陳宣佑、凃博奕、林均瑞</div></div></li>
+      <li><div class="y">2024</div><div><div class="ti">AEM 電解氫槽結構參數最佳化</div><div class="me">中國機械工程學會第 41 屆全國學術研討會　·　龔孟謙、陳鵬仁（通訊）</div></div></li>
+      <li><div class="y">2024</div><div><div class="ti">電解氫設備結構流場特性分析研究</div><div class="me">第二屆臺灣計算力學學會年會與學術研討會暨第十五屆臺灣邊界元素法會議　·　陳鵬仁、龔孟謙</div></div></li>
+      <li><div class="y">2024</div><div><div class="ti">AEM 電解槽幾何參數流場特性數值模擬研究</div><div class="me">2024 全國氫能與燃料電池學術研討會及第 19 屆氫能與燃料電池技術論壇　·　陳鵬仁、陳彥橙、林雅婷</div></div></li>
+      <li><div class="y">2024</div><div><div class="ti">雨水回收產氫應用系統研究</div><div class="me">2024 綠色科技工程與應用研討會（GTEA）　·　陳彥橙、林雅婷、廖茂成、陳鵬仁（通訊）</div></div></li>
+      <li><div class="y">2024</div><div><div class="ti">應用反應曲面法處理雙套管式熱交換器之熱傳性能最佳化研究</div><div class="me">台灣機電工程國際學會 2024 年會暨第九屆全國學術研討會（ISME 2024）　·　陳鵬仁、彭奐森</div></div></li>
+      <li><div class="y">2023</div><div><div class="ti">雙套管式熱交換器之熱傳性能改善研究</div><div class="me">中國機械工程學會第 40 屆全國學術研討會　·　彭奐森、陳鵬仁（通訊）</div></div></li>
+      <li><div class="y">2023</div><div><div class="ti">Investigation of Thermal Performance of a Double Pipe Heat Exchanger with Wavy Inner Pipe</div><div class="me">Twentieth International Conference on Flow Dynamics（ICFD 2023，日本仙台）　·　Huan-Sen Peng、Peng-Jen Chen（通訊）</div></div></li>
+  </ul>
+</section>
+
+<section id="awards" class="wrap sec">
+  <div class="head"><span class="no">06</span><h2>獲獎紀錄</h2><span class="ln"></span></div>
+  <div class="awards">
+    <div class="award">
+      <div class="yr">2026 · GTEA</div>
+      <div class="rank">領域最佳論文</div>
+      <h3>2026 綠色科技工程與應用研討會　綠色能源與節能（GEES）領域</h3>
+      <p>論文：最佳樹狀生成流道系統設計之電解氫轉化效率預測系統<br>作者：陳鵬仁、李育安、黃閔澤、陳柏源</p>
+    </div>
+    <div class="award">
+      <div class="yr">2024 · THE FC</div>
+      <div class="rank">優等</div>
+      <h3>2024 第十九屆全國氫能與燃料電池學術研討會　氫能技術領域一般論文組</h3>
+      <p>論文：電解氫設備結構流場特性分析研究<br>作者：龔孟謙、陳鵬仁</p>
+    </div>
+    <div class="award">
+      <div class="yr">2024 · 均豪精密</div>
+      <div class="rank">第一名</div>
+      <h3>第十三屆全國大專院校 AI 智動化設備創作獎</h3>
+      <p>作品：千噸鍛造震四海，蟻群智慧行天下<br>指導教師：彭達仁、陳鵬仁</p>
+    </div>
+  </div>
 </section>
 
 <section class="wrap sec">
-  <div class="head"><span class="no">06</span><h2>研究計畫與產學合作</h2><span class="ln"></span></div>
+  <div class="head"><span class="no">07</span><h2>研究計畫與產學合作</h2><span class="ln"></span></div>
   <div class="grid2">
     <div class="card dark">
       <div class="kicker">NSTC 114</div>
@@ -444,7 +519,7 @@
 </section>
 
 <section class="wrap sec">
-  <div class="head" style="margin-bottom:40px"><span class="no">07</span><h2>開授課程</h2><span class="ln"></span></div>
+  <div class="head" style="margin-bottom:40px"><span class="no">08</span><h2>開授課程</h2><span class="ln"></span></div>
   <div class="courses">
     <span>熱力學</span><span>電腦輔助熱流分析</span><span>材料力學</span><span>電腦輔助機械製圖</span><span>工業 4.0 概論</span><span>感測器原理應用與實習</span><span>程式語言（二）</span><span>智慧自動化工程概論</span><span>製造學</span>
   </div>
